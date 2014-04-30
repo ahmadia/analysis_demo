@@ -16,7 +16,7 @@ def get_counts(html):
     return Counter(words)
 
 def get_html(url):
-    response = urllib2.open(url)
+    response = urllib2.urlopen(url)
     return response.read()
 
 def simple_bar(data, labels, title):
@@ -46,3 +46,4 @@ if __name__ == '__main__':
         labels.append(site)
     title = "Occurence of word '" + search_term + "' on major news sites"
     simple_bar(data, labels, title)
+    plt.savefig('analysis.png')

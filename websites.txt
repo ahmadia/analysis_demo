@@ -1,0 +1,4 @@
+nytimes http://www.nytimes.com
+msn http://www.msn.com
+cnn http://www.cnn.com
+
